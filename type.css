@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+body { 
+  font-family: 'Open Sans', 'sans-serif';
+  overflow: hidden;
+      padding: 7em 3em 3em 20em;
+    background-color: #AAAAAA;
+}
+.heart {
+    background-color: black;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: black;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+
+.heart:before {
+    top: -15px;
+    left: 0;
+}
+
+.heart:after {
+    left: 15px;
+    top: 0;
+}
+
+.x {
+    padding-left: 100px;
+    width: 460px;
+    float: left;
+    font-family: serif;
+    font-size: 18px;
+    color: #DDDD;
+}
+
+.y {
+    padding: 20px;
+    width: 50px;
+}
