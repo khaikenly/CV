@@ -10,7 +10,7 @@ var brk = '~'; // character to use for line break
 var resetTime = 0; // set to 0 to not reset or seconds to delay before reset
 
 function twDisplay(id,content,num) {
-	var delay = 30; if (num <= content.length) {
+	var delay = 50; if (num <= content.length) {
 		var lt = content.substr(0,num); 
 		document.getElementById(id).innerHTML = lt.replace(RegExp(brk,'g'),'<br \/>');
 			num++;
