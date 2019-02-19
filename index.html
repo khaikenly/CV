@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>I don't know</title>
+    <link rel='stylesheet' type='text/css' href="type.css">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="tt.js"></script>
+    <script type="text/javascript">
+
+        var i = 0;          // Start Point
+        var images = [];    // Images Array
+        var time = 3500;    // Time Between Switch
+             
+        // Image List
+        images[0] = "1.jpg";
+        images[1] = "2.jpg";
+        images[2] = "3.jpg";
+        images[3] = "4.jpg";
+        images[4] = "snow.jpg";
+        images[5] = "5.jpg";
+        // Change Image
+        function changeImg(){
+            document.slide.src = images[i];
+
+            // Check If Index Is Under Max
+            if(i < images.length - 1){
+              // Add 1 to Index
+              i++; 
+            } else { 
+                // Reset Back To O
+                i = 0;
+            }
+
+            // Run function every x seconds
+            setTimeout("changeImg()", time);
+        }
+
+        // Run function when page loads
+        window.onload=changeImg;
+
+    </script>
+ 
+
+</head>
+
+<body>
+    <div class="y"><span class="heart"></span></div>
+
+    <div class="x">
+            <div id="tw"></div>
+    </div>
+    <img name="slide" width="500" height="auto" padding-right="2em">
+    <iframe src="MuaMuaNgauNamCanh.mp3" width="0" height="0" frameborder="0" allowfullscreen> </iframe>
+</body>
+
+</html>
