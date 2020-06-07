@@ -1,0 +1,301 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    font-family: 'Century Gothic',sans-serif;
+}
+.container{
+    background: #2c3e50;
+}
+#nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 500px;
+}
+
+
+#nav a {
+    width: 165px;
+    padding: 12px;
+    background-color: #222;
+    color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    display: block;
+    text-decoration-line: none;
+    transition: 0.6s all;
+    margin-left: -140px;
+    text-align: center;
+}
+#nav a:hover{
+    margin-left: 0;
+}
+
+#home,
+#about,
+#services,
+#works,
+#contact {
+    padding: 15px;
+    margin: 15px 15px 15px 100px;
+    border: none;
+    height: auto;
+    border-radius: 2px;
+    width: 85%;
+    float: right;
+}
+
+#home {
+    margin: 0 auto;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about {
+    margin: 0 auto;
+}
+
+#services {
+    margin: 0 auto;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#works {
+    margin: 0 auto;
+   
+}
+
+#contact {
+    margin: 0 auto;
+
+}
+
+.content {
+    padding: 10px;
+}
+.footer{
+    clear: both;
+    text-align: center;
+    font-size: 14px;
+}
+
+.box{
+    
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #95a5a6;
+}
+
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutme p{
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.1);
+    width: 550px;
+    float: left;
+    margin: 0px auto;
+    color: #ddd;
+    padding: 100px 10px 50px 10px;
+    text-align: center;
+}
+.skills{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 600px;
+    margin: 0px auto;
+    color: #ddd;
+    float: right;
+    padding-left: 20px;
+}
+.skills li{
+    margin: 10px 0;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: :1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+     width: 55%;
+     animation:css 2s;
+}
+.javascript{
+     width: 30%;
+     animation: javascript 2s;
+}
+.jquery{
+    width: 45%;
+    animation: jquery 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes jquery{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 45%;
+    }
+}
+
+.section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+.service-icon{
+    display: inline-block;
+    border: 1px solid #82ccdd;
+    color: #82ccdd;
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+
+.service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 25px;
+}
+
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+
+.service-title{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.service-desc{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
